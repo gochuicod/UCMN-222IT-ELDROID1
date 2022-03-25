@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:autofillHints="emailAddress"
+        android:ems="17"
+        android:gravity="center"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextFirstName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/firstName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/lastName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextMiddleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/middleName"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextFirstName"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextFirstName" />
+
+    <EditText
+        android:id="@+id/editTextTextBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/birthdate"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextLastName"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextLastName" />
+
+    <EditText
+        android:id="@+id/editTextTextGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/gender"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextMiddleName"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextMiddleName" />
+
+    <EditText
+        android:id="@+id/editTextTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/age"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextBirthday"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextBirthday" />
+
+    <EditText
+        android:id="@+id/editTextTextHomeAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="17"
+        android:hint="@string/homeAddress"
+        android:importantForAutofill="no"
+        android:inputType="textPostalAddress"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextGender" />
+
+    <EditText
+        android:id="@+id/editTextTextCivilStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/civilStatus"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintStart_toStartOf="@id/editTextTextHomeAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextHomeAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:hint="@string/phoneNumber"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextHomeAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextHomeAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextEmergencyContactNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="17"
+        android:hint="@string/emergencyContactNumber"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextCivilStatus" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@id/editTextTextEmailAddress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
